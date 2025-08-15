@@ -26,14 +26,11 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					light: 'hsl(var(--primary-light))',
-					dark: 'hsl(var(--primary-dark))'
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))',
-					light: 'hsl(var(--secondary-light))'
+					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -45,8 +42,7 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-					light: 'hsl(var(--accent-light))'
+					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -55,14 +51,6 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				},
-				neutral: {
-					50: 'hsl(var(--neutral-50))',
-					100: 'hsl(var(--neutral-100))',
-					200: 'hsl(var(--neutral-200))',
-					300: 'hsl(var(--neutral-300))',
-					800: 'hsl(var(--neutral-800))',
-					900: 'hsl(var(--neutral-900))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -100,22 +88,7 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fadeIn 0.8s ease-out forwards',
-				'slide-up': 'slideUp 0.8s ease-out forwards',
-				'scale-in': 'scaleIn 0.6s ease-out forwards',
-				'float': 'float 3s ease-in-out infinite',
-				'pulse-glow': 'pulseGlow 2s ease-in-out infinite'
-			},
-			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-overlay': 'var(--gradient-overlay)',
-				'gradient-card': 'var(--gradient-card)'
-			},
-			boxShadow: {
-				'luxury': 'var(--shadow-luxury)',
-				'card-hover': 'var(--shadow-hover)',
-				'elegant': 'var(--shadow-card)'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},

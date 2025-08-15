@@ -2,77 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Aqal Property Design System - Luxury Real Estate Theme */
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
 
 @layer base {
   :root {
-    /* Brand Colors - Sophisticated Property Theme */
-    --background: 245 245 255%;
-    --foreground: 25 25% 15%;
-    
-    /* Primary - Elegant Gold/Bronze */
-    --primary: 32 85% 45%;
-    --primary-light: 35 88% 65%;
-    --primary-dark: 28 80% 35%;
-    
-    /* Secondary - Deep Navy */
-    --secondary: 220 25% 25%;
-    --secondary-light: 220 30% 35%;
-    
-    /* Accent - Warm Terracotta */
-    --accent: 15 70% 60%;
-    --accent-light: 15 75% 75%;
-    
-    /* Neutral Tones */
-    --neutral-50: 0 0% 98%;
-    --neutral-100: 0 0% 95%;
-    --neutral-200: 0 0% 90%;
-    --neutral-300: 0 0% 82%;
-    --neutral-800: 0 0% 20%;
-    --neutral-900: 0 0% 10%;
-    
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
-    --gradient-overlay: linear-gradient(45deg, hsl(var(--secondary) / 0.9), hsl(var(--primary) / 0.8));
-    --gradient-card: linear-gradient(145deg, hsl(var(--neutral-50)), hsl(var(--neutral-100)));
-    
-    /* Shadows */
-    --shadow-luxury: 0 20px 60px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 10px 30px -5px hsl(var(--neutral-800) / 0.1);
-    --shadow-hover: 0 25px 80px -15px hsl(var(--primary) / 0.3);
-    
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
-    /* Base colors for shadcn compatibility */
-    --background: 245 245 255%;
-    --foreground: 25 25% 15%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: var(--neutral-50);
-    --card-foreground: var(--foreground);
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: var(--neutral-50);
-    --popover-foreground: var(--foreground);
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: var(--primary);
-    --primary-foreground: var(--neutral-50);
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: var(--neutral-100);
-    --secondary-foreground: var(--foreground);
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: var(--neutral-100);
-    --muted-foreground: var(--neutral-800);
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: var(--accent);
-    --accent-foreground: var(--neutral-50);
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: var(--neutral-50);
+    --destructive-foreground: 210 40% 98%;
 
-    --border: var(--neutral-200);
-    --input: var(--neutral-200);
-    --ring: var(--primary);
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 
@@ -139,67 +101,5 @@
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-@layer utilities {
-  /* Animation utilities */
-  .fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
-  
-  .slide-up {
-    animation: slideUp 0.8s ease-out forwards;
-  }
-  
-  .scale-in {
-    animation: scaleIn 0.6s ease-out forwards;
-  }
-  
-  .parallax {
-    transform: translateZ(0);
-    will-change: transform;
-  }
-  
-  /* Property card hover effects */
-  .property-card {
-    transition: var(--transition-smooth);
-  }
-  
-  .property-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
-  }
-  
-  /* Hero button styles */
-  .hero-button {
-    background: var(--gradient-hero);
-    box-shadow: var(--shadow-luxury);
-    transition: var(--transition-bounce);
-  }
-  
-  .hero-button:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
 }
